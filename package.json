@@ -1,0 +1,20 @@
+{
+	"name": "jsstl",
+	"version": "0.0.1",
+	"description": "stl for js",
+	"keywords":[
+		"stl","algorithm"
+	],
+	"author": "running_snail (http://snailsky.me)",
+	"license": "MIT",
+	"main": "example.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/gyj963/jsstl.git"
+	},
+	"bugs": {
+		"url": "https://github.com/gyj963/jsstl/issues"
+	},
+	"homepage": "https://github.com/gyj963/jsstl",
+	"readmeFilename":"README.md"
+}
