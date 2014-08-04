@@ -16,8 +16,8 @@ var Comparator=require("../util/comparator");
  */
 var sort_shell=function(opt){
 	var array=opt.array,
-		begin=opt.begin&&opt.begin<=array.length-1?opt.begin: 0,
-		end=opt.end&&opt.end<=array.length-1?opt.end: array.length-1,
+		begin=typeof opt.begin !== "undefined"&&opt.begin<=array.length-1?opt.begin: 0,
+		end=typeof opt.end !== "undefined"&&opt.end<=array.length-1?opt.end: array.length-1,
 		comparator=new Comparator(opt.compare),
 		i=0,j=0,temp= 0,gap=parseInt((end-begin+1)/2);
 

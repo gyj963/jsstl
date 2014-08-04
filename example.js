@@ -30,4 +30,4 @@ var opt={
 //sort_select(opt);
 //sort_bubble(opt);
 sort_quick(opt);
-//console.log(array);
+console.log(array);
