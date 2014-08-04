@@ -1,20 +1,27 @@
 {
-	"name": "jsstl",
-	"version": "0.0.1",
-	"description": "stl for js",
-	"keywords":[
-		"stl","algorithm"
-	],
-	"author": "running_snail (http://snailsky.me)",
-	"license": "MIT",
-	"main": "example.js",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/gyj963/jsstl.git"
-	},
-	"bugs": {
-		"url": "https://github.com/gyj963/jsstl/issues"
-	},
-	"homepage": "https://github.com/gyj963/jsstl",
-	"readmeFilename":"README.md"
+  "name": "jsstl",
+  "version": "0.0.1",
+  "description": "stl for js",
+  "keywords": [
+    "stl",
+    "algorithm"
+  ],
+  "author": "running_snail (http://snailsky.me)",
+  "license": "MIT",
+  "main": "example.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gyj963/jsstl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gyj963/jsstl/issues"
+  },
+  "homepage": "https://github.com/gyj963/jsstl",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "mocha": "~1.21.3",
+    "jshint": "~2.5.2",
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0"
+  }
 }

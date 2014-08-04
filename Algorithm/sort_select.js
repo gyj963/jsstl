@@ -1,12 +1,11 @@
 /**
- * Created by Administrator on 14-7-31.
+ * Created by Administrator on 14-8-2.
  */
 var Comparator=require("../util/comparator");
 /**
  *  名称          时间复杂度         额外空间       稳定性
- *  插入排序      平均 O(n^2)        O(1)          稳定
- *               最优 O(n)
- *               最差 O(n^2)
+ *  选择排序       O(n^2)            O(1)         不稳定
+ *
  * @param opt
  * opt={
  *      array:Array,
@@ -15,22 +14,26 @@ var Comparator=require("../util/comparator");
  *      compare:function
  * }
  */
-var sort_insertion=function(opt){
+var sort_select=function(opt){
 	var array=opt.array,
 		begin=opt.begin&&opt.begin<=array.length-1?opt.begin: 0,
 		end=opt.end&&opt.end<=array.length-1?opt.end: array.length-1,
 		comparator=new Comparator(opt.compare),
-		i=0,j=0,temp=0;
+		i=0,j=0,temp= 0,min=0;
 
-	for(i=begin+1;i<=end;i++){
-		temp=array[i];
-		j = i-1;
-		while(j>=begin&&comparator.greaterThan(array[j],temp)){
-			array[j+1]=array[j];
-			j--;
+	for(i=begin;i<end;i++){
+		min = i;
+		for(j = i+1;j<=end;j++){
+			if(comparator.greaterThan(array[min], array[j])){
+				min=j;
+			}
 		}
-		array[j+1]=temp;
+		if(min!==i) {
+			temp = array[min];
+			array[min]=array[i];
+			array[i]=temp;
+		}
 	}
 	return array;
 }
-module.exports=sort_insertion;
+module.exports=sort_select;
