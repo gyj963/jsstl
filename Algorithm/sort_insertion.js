@@ -17,8 +17,8 @@ var Comparator=require("../util/comparator");
  */
 var sort_insertion=function(opt){
 	var array=opt.array,
-		begin=typeof opt.begin !== "undefined"&&opt.begin<=array.length-1?opt.begin: 0,
-		end=typeof opt.end !== "undefined"&&opt.end<=array.length-1?opt.end: array.length-1,
+		begin=typeof opt.begin !== "undefined"&&opt.begin<=array.length-1&&opt.begin>=0?opt.begin: 0,
+		end=typeof opt.end !== "undefined"&&opt.end<=array.length-1&&opt.end>0?opt.end: array.length-1,
 		comparator=new Comparator(opt.compare),
 		i=0,j=0,temp=0;
 

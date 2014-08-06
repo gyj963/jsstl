@@ -2,7 +2,6 @@
  * Created by Administrator on 14-8-3.
  */
 var Comparator=require("../util/comparator");
-var clone=require("../util/clone");
 /**
  *  名称          时间复杂度         额外空间       稳定性
  *  快速排序      O(n log n)        O(1)          不稳定
