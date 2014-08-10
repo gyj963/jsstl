@@ -1,8 +1,8 @@
 /**
  * Created by Administrator on 14-8-5.
  */
-var assert=require("assert");
-var sort_heap=require("../../algorithm/sort_heap");
+var sort_heap=require("../../../algorithm/sort/sort_heap"),
+	assert=require("assert");
 describe("堆排序 heap sort:",function(){
 	it("参数对象中只有数组(array)时，对数组中的全部，可以进行正确排序（从小到大）",function(){
 		assert.deepEqual(sort_heap({array:[]}),[]);

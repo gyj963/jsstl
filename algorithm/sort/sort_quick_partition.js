@@ -4,10 +4,10 @@
 /**
  * Created by Administrator on 14-8-3.
  */
-var Comparator=require("../util/comparator");
-var swap=require("../util/swap");
-var generateRandomInt=require("../util/generateRandomInt");
-var getDgs=require("../util/getDgs");
+var Comparator=require("../../util/comparator");
+var swap=require("../../util/swap");
+var generateRandomInt=require("../../util/generateRandomInt");
+var getDgs=require("../../util/getDgs");
 
 /**
  *  名称          时间复杂度         额外空间       稳定性

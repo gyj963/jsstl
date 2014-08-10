@@ -1,8 +1,8 @@
 /**
  * Created by Administrator on 14-8-2.
  */
-var assert=require("assert");
-var sort_shell=require("../../algorithm/sort_shell");
+var sort_shell=require("../../../algorithm/sort/sort_shell"),
+	assert=require("assert");
 describe("希尔排序 shell sort:",function(){
 	it("参数对象中只有数组(array)时，对数组中的全部，可以进行正确排序（从小到大）",function(){
 		assert.deepEqual(sort_shell({array:[]}),[]);

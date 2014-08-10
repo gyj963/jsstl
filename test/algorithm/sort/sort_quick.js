@@ -1,8 +1,8 @@
 /**
  * Created by Administrator on 14-8-2.
  */
-var assert=require("assert");
-var sort_quick=require("../../algorithm/sort_quick");
+var sort_quick=require("../../../algorithm/sort/sort_quick"),
+	assert=require("assert");
 describe("快速排序 quick sort:",function(){
 	it("参数对象中只有数组(array)时，对数组中的全部，可以进行正确排序（从小到大）",function(){
 		assert.deepEqual(sort_quick({array:[]}),[]);

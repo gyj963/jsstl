@@ -1,8 +1,8 @@
 /**
  * Created by Administrator on 14-8-2.
  */
-var assert=require("assert");
-var sort_select=require("../../algorithm/sort_select");
+var sort_select=require("../../../algorithm/sort/sort_select"),
+	assert=require("assert");
 describe("选择排序 select sort:",function(){
 	it("参数对象中只有数组(array)时，对数组中的全部，可以进行正确排序（从小到大）",function(){
 		assert.deepEqual(sort_select({array:[]}),[]);

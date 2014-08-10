@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 14-8-6.
  */
-var Comparator=require("../util/comparator");
+var Comparator=require("../../util/comparator");
 /**
  *  名称          时间复杂度         额外空间       稳定性
  *  归并排序      平均O(nlogn)       O(n)          稳定

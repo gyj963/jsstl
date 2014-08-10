@@ -1,8 +1,8 @@
 /**
  * Created by Administrator on 14-8-3.
  */
-var Comparator=require("../util/comparator");
-var swap=require("../util/swap");
+var Comparator=require("../../util/comparator");
+var swap=require("../../util/swap");
 /**
  *  名称          时间复杂度         额外空间       稳定性
  *  鸡尾酒排序     O(n^2)            O(1)          稳定

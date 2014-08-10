@@ -1,10 +1,10 @@
 /**
  * Created by Administrator on 14-8-5.
  */
-var Comparator=require("../util/comparator");
-var swap=require("../util/swap");
-var isOdd=require("../util/isOdd");
-var isEven=require("../util/isEven");
+var Comparator=require("../../util/comparator");
+var swap=require("../../util/swap");
+var isOdd=require("../../util/isOdd");
+var isEven=require("../../util/isEven");
 /**
  *  名称          时间复杂度         额外空间       稳定性
  *  堆排序        O(n log n)        O(n)          不稳定

@@ -1,8 +1,8 @@
 /**
  * Created by Administrator on 14-8-2.
  */
-var assert=require("assert");
-var sort_insertion=require("../../algorithm/sort_insertion");
+var sort_insertion=require("../../../algorithm/sort/sort_insertion"),
+	assert=require("assert");
 describe("插入排序 insertion sort:",function(){
 	it("参数对象中只有数组(array)时，对数组中的全部，可以进行正确排序（从小到大）",function(){
 		assert.deepEqual(sort_insertion({array:[]}),[]);
