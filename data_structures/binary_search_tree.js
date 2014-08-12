@@ -70,19 +70,22 @@ BinarySearchTree.prototype.remove=function(e){
 	/**
 	 * 如果要删除的结点只有一边有孩子，就把一边的孩子移上来
 	 */
-	else if(node.lchild || node.rchild){
-		var child=node.lchild?"lchild":"rchild";
-		node.value = node[child].value;
-		node.lchild=node[child].lchild;
-		node.rchild=node[child].rchild;
-	}
-
-	else{
-		var child=node.parent.lchild && node.parent.lchild===node?"lchild":"rchild";
-		node.parent[child]=null;
-		this.size--;
+	else {
+		this._replaceNodeInParent(node,node.lchild || node.rchild )
+		this._size--;
 	}
 };
+BinarySearchTree.prototype._replaceNodeInParent=function(currentNode,newNode){
+	var parent=currentNode.parent;
+	if(parent){
+		parent[parent.lchild===currentNode?"lchild":"rchild"]=newNode;
+		if(newNode){
+			newNode.parent = parent;
+		}
+	}else{
+		this.root=newNode;
+	}
+}
 BinarySearchTree.prototype._findMin=function(node){
 	while(node.lchild){
 		node = node.lchild;
