@@ -7,6 +7,7 @@ var swap=require("../../util/swap");
  *  名称          时间复杂度         额外空间       稳定性
  *  选择排序       O(n^2)            O(1)         不稳定
  *
+ * flash：http://ds.fzu.edu.cn/fine/resources/FlashContent.asp?id=85
  * @param opt
  * opt={
  *      array:Array,

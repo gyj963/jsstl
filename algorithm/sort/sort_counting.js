@@ -9,6 +9,7 @@ var array_max=require("../../util/array_max");
  *  计数排序      O(n+k) n个0到k之间的整数时       O(n)          稳定
  *
  *  注：用来排序密集正整数
+ *  flash:http://ds.fzu.edu.cn/fine/resources/FlashContent.asp?id=89
  * @param opt
  * opt={
  *      array:Array, （数组里是正整数）

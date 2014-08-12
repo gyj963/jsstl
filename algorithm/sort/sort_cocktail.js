@@ -7,6 +7,7 @@ var swap=require("../../util/swap");
  *  名称          时间复杂度         额外空间       稳定性
  *  鸡尾酒排序     O(n^2)            O(1)          稳定
  *
+ * flash：http://blog.csdn.net/han_xiaoyang/article/details/12163251
  * @param opt
  * opt={
  *      array:Array,

@@ -7,6 +7,8 @@ var Comparator=require("../../util/comparator");
  *  插入排序      平均 O(n^2)        O(1)          稳定
  *               最优 O(n)
  *               最差 O(n^2)
+ *
+ * flash：http://www.tjbpi.com/jpk/shujujiegou/flash/%B5%DA%CA%AE%D2%BB%D5%C2%20%C5%C5%D0%F2/%D6%B1%BD%D3%B2%E5%C8%EB%C5%C5%D0%F2.swf
  * @param opt
  * opt={
  *      array:Array,

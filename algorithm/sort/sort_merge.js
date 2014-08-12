@@ -8,6 +8,7 @@ var Comparator=require("../../util/comparator");
  *               最差O(nlogn)
  *               最优O(n)
  *
+ * flash:http://ds.fzu.edu.cn/fine/resources/FlashContent.asp?id=93
  * @param opt
  * opt={
  *      array:Array,

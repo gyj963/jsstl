@@ -6,6 +6,7 @@ var Comparator=require("../../util/comparator");
  *  名称          时间复杂度         额外空间       稳定性
  *  快速排序      O(n log n)        O(1)          不稳定
  *
+ * flash:http://ds.fzu.edu.cn/fine/resources/FlashContent.asp?id=86
  * @param opt
  * opt={
  *      array:Array,

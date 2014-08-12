@@ -9,6 +9,7 @@ var swap=require("../../util/swap");
  *               最优 O(n)
  *               最差 O(n^2)
  *
+ * flash：http://student.zjzk.cn/course_ware/data_structure/web/flashhtml/maopaopaixu.htm
  * @param opt
  * opt={
  *      array:Array,

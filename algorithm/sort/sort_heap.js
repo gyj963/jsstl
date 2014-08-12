@@ -9,6 +9,7 @@ var isEven=require("../../util/isEven");
  *  名称          时间复杂度         额外空间       稳定性
  *  堆排序        O(n log n)        O(n)          不稳定
  *
+ * flash：http://ds.fzu.edu.cn/fine/resources/FlashContent.asp?id=88
  * @param opt
  * opt={
  *      array:Array,
