@@ -14,6 +14,10 @@ var sort_merge=require("./algorithm/sort/sort_merge");
 var sort_counting=require("./algorithm/sort/sort_counting");
 var LinkedList=require("./data_structures/double_linked_list");
 var BinarySearchTree=require("./data_structures/binary_search_tree");
+var LIS=require("./algorithm/array/longest_increasing_subsequences");
+var LCS=require("./algorithm/string/longest_common_substring");
+var LCS=require("./algorithm/string/longest_common_subsequence");
+var LNRS=require("./algorithm/string/longest_no_repeat_substring");
 
 //	var array=[];
 //	var array=[4,12,5,77];
@@ -64,19 +68,26 @@ var BinarySearchTree=require("./data_structures/binary_search_tree");
 //linkedList.del(2);
 //console.log(linkedList);
 
-var binarySearchTree=new BinarySearchTree();
-binarySearchTree.insert(4);
-binarySearchTree.insert(2);
-binarySearchTree.insert(7);
-binarySearchTree.insert(3);
-binarySearchTree.insert(12);
-binarySearchTree.insert(0);
-binarySearchTree.insert(5);
-binarySearchTree.insert(15);
+//var binarySearchTree=new BinarySearchTree();
+//binarySearchTree.insert(4);
+//binarySearchTree.insert(2);
+//binarySearchTree.insert(7);
+//binarySearchTree.insert(3);
+//binarySearchTree.insert(12);
+//binarySearchTree.insert(0);
+//binarySearchTree.insert(5);
+//binarySearchTree.insert(15);
 //console.log(binarySearchTree.root);
 //console.log(binarySearchTree.contains(6));
 //console.log(binarySearchTree.contains(2));
 //console.log(binarySearchTree.contains(8));
 //console.log(binarySearchTree.contains(3));
-binarySearchTree.remove(4);
-console.log(binarySearchTree.root);
+//binarySearchTree.remove(4);
+//console.log(binarySearchTree.root);
+
+//console.log(LIS([1,5,8,2,3,4]));
+//console.log(LCS("ABCBDAB","BDCABA"));
+//console.log(LCS("caba","bab"));
+//console.log(LCS("21232523311324","312123223445"));
+
+console.log(LNRS("ABCBDAB"));
