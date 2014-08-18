@@ -18,6 +18,7 @@ var LIS=require("./algorithm/array/longest_increasing_subsequences");
 var LCS=require("./algorithm/string/longest_common_substring");
 var LCS=require("./algorithm/string/longest_common_subsequence");
 var LNRS=require("./algorithm/string/longest_no_repeat_substring");
+var LPS=require("./algorithm/string/longest_palindromic_substring");
 
 //	var array=[];
 //	var array=[4,12,5,77];
@@ -90,4 +91,5 @@ var LNRS=require("./algorithm/string/longest_no_repeat_substring");
 //console.log(LCS("caba","bab"));
 //console.log(LCS("21232523311324","312123223445"));
 
-console.log(LNRS("ABCBDAB"));
+//console.log(LNRS("ABCBDAB"));
+console.log(LPS("babcbabcbaccba"));
